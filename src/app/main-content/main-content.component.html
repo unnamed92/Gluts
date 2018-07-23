@@ -1,0 +1,15 @@
+<div class="product-card" *ngFor='let item of products'>
+  <div class='wallpaper-photo'>
+    <img mat-card-image src="{{item.image}}" alt="Wallpaper photo">
+  </div>
+  <div>{{item.name}}</div>
+  <div>
+    <p>Артиул:</p>{{item.articul}}</div>
+  <div>
+    <p>Бренд:</p>{{item.brand}}</div>
+  <div>
+    <p>Цена:</p>{{item.price}}</div>
+  <div class='order-btn-wrapper'>
+    <button (click)='addToCart(item)' class='order-btn'>Заказать</button>
+  </div>
+</div>
