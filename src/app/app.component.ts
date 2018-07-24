@@ -48,7 +48,7 @@ export class AppComponent {
     },
   ];
 
-  pushToCart(event: any) {
+  pushToCart(event: Product) {
     this.productCart.push(event);
   }
 }

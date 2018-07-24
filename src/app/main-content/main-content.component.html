@@ -1,3 +1,4 @@
+<div class='content-wrapper'>
 <div class="product-card" *ngFor='let item of products'>
   <div class='wallpaper-photo'>
     <img mat-card-image src="{{item.image}}" alt="Wallpaper photo">
@@ -12,4 +13,5 @@
   <div class='order-btn-wrapper'>
     <button (click)='addToCart(item)' class='order-btn'>Заказать</button>
   </div>
+</div>
 </div>

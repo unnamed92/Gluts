@@ -1,8 +1,9 @@
-/* .content-wrapper {
+.content-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+/* 
 .product-card {
   width: 200px;
   height: 300px;

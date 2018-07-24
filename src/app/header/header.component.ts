@@ -14,9 +14,8 @@ export class HeaderComponent {
     this.condition = !this.condition;
   }
 
-  productDelete(event: any) {
-    console.log(event);
+  productDelete(event: Product) {
     this.productCart.splice(event, 1);
-    console.log(this.productCart);
+    this.productCart.push(event);
   }
 }

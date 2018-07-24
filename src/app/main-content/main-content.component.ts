@@ -12,7 +12,7 @@ export class MainContentComponent {
 
   @Output() pushToCart: EventEmitter<any> = new EventEmitter();
 
-  addToCart(item: any) {
+  addToCart(item: Product) {
     this.pushToCart.emit(item);
   }
 }

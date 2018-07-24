@@ -7,8 +7,6 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 
-import {MatCardModule} from '@angular/material/card';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +17,6 @@ import {MatCardModule} from '@angular/material/card';
   ],
   imports: [
     BrowserModule,
-    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
