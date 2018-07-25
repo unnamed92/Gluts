@@ -10,6 +10,7 @@
   margin-right: 70px;
   margin-bottom: 55px;
   font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .order-btn {
@@ -26,5 +27,8 @@
   font-size: 20px;
 }
 
+p {
+  margin: 15px 0;
+}
 
 

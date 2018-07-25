@@ -44,4 +44,21 @@ a {
 
 .cart-underline {
   border-bottom: 1px solid black;
+  font-size: 16px;
+}
+
+.item-count {
+  color: #9054b2;
+}
+
+input::-webkit-input-placeholder {
+  color: #adadad;
+  font-size: 16px;
+  padding: 15px;
+}
+
+input:-moz-placeholder {
+  color: #adadad;
+  font-size: 16px;
+  padding: 15px;
 }
