@@ -1,8 +1,11 @@
 .footer-wrapper {
-    background: #f5f3f5;
+    background: #2c2c2c;
+    color: #a7a7a7;
+    font-size: 12px;
+    text-align: center;
 }
 
-.h1-gluts {
+/* .h1-gluts {
     color: #7f7f80;
 }
 
@@ -14,4 +17,4 @@ h1 {
 
 p {
     padding: 0 190px 45px 100px;
-}
+} */

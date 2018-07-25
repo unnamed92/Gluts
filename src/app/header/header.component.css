@@ -1,23 +1,31 @@
+.header-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+
 .nav-wrapper {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 75px;
   margin: 0 auto 155px auto;
-  width: 1200px;
+  /* width: 1200px; */
   border-bottom: 3px solid black;
 }
 
 .phones {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 a {
-  margin: 30px 10px 20px 0;
+  margin-right: 15px;
   text-decoration: none;
   color: #000;
+  font-family: Open Sans;
+  font-size: 16px;
 }
 
 .search-input {
@@ -25,6 +33,8 @@ a {
   height: 30px;
   background: #f5f3f5;
   border: none;
+  padding: 0 45px 0 15px;
+  outline: none;
 }
 
 .search {
@@ -34,31 +44,42 @@ a {
 .search-img {
   position: absolute;
   right: 25px;
-  top: 10px;
+  top: 50%;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
 }
 
 .cart-btn {
   background: transparent;
   border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .cart-underline {
   border-bottom: 1px solid black;
   font-size: 16px;
+  font-family: Open Sans;
 }
 
 .item-count {
   color: #9054b2;
 }
 
+.product-cart {
+  display: flex;
+}
+
 input::-webkit-input-placeholder {
   color: #adadad;
   font-size: 16px;
-  padding: 15px;
+  font-family: Open Sans;
 }
 
 input:-moz-placeholder {
   color: #adadad;
   font-size: 16px;
-  padding: 15px;
+  font-family: Open Sans;
 }
