@@ -1,16 +1,30 @@
 .content-wrapper {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   flex-wrap: wrap;
-}
-/* 
-.product-card {
-  width: 200px;
-  height: 300px;
-  margin-top: 300px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.wallpaper-photo {
-  width: 30px;
-  height: 30px;
-} */
+.product-card {
+  margin-right: 70px;
+  margin-bottom: 55px;
+  font-size: 16px;
+}
+
+.order-btn {
+  width: 140px;
+  height: 35px;
+  border: none;
+  background: #9054b2;
+  color: #f8f4fa;
+  outline: none;
+  cursor: pointer;
+}
+
+.item-name {
+  font-size: 20px;
+}
+
+
+

@@ -1,17 +1,17 @@
 <div class='content-wrapper'>
-<div class="product-card" *ngFor='let item of products'>
-  <div class='wallpaper-photo'>
-    <img mat-card-image src="{{item.image}}" alt="Wallpaper photo">
+  <div class="product-card" *ngFor='let item of products'>
+    <div class='wallpaper-photo'>
+      <img mat-card-image src="{{item.image}}" alt="Wallpaper photo">
+    </div>
+    <div class="item-name">{{item.name}}</div>
+    <div class="normal-text">
+      <p>Артиул: {{item.articul}}</p></div>
+    <div>
+      <p>Бренд: <span class="bold-text">{{item.brand}}</span></p></div>
+    <div class="bold-text">
+      <p>Цена: {{item.price}}</p></div>
+    <div class='order-btn-wrapper'>
+      <button (click)='addToCart(item)' class='order-btn'>Заказать</button>
+    </div>
   </div>
-  <div>{{item.name}}</div>
-  <div>
-    <p>Артиул:</p>{{item.articul}}</div>
-  <div>
-    <p>Бренд:</p>{{item.brand}}</div>
-  <div>
-    <p>Цена:</p>{{item.price}}</div>
-  <div class='order-btn-wrapper'>
-    <button (click)='addToCart(item)' class='order-btn'>Заказать</button>
-  </div>
-</div>
 </div>

@@ -1,16 +1,22 @@
+
   <div class='phones'>
-    <span>+38012343221</span>
-    <span>+38021234324</span>
+    <a href="tel:+38012343221">+38012343221</a>
+    <a href="tel:+38021234324">+38021234324</a>
   </div>
-  <div class='logo-img'>
-    <img src="../../assets/images/logo.png" alt="logo">
+  <div class="nav-wrapper">
+    
+    <div class='logo-img'>
+      <img src="../../assets/images/logo.png" alt="logo">
+    </div>
+    <div class='search'>
+      <input class='search-input' type='text' placeholder='Более 1000 товаров' />
+      <a><img src="../../assets/images/search.png" class="search-img"></a>
+    </div>
+    <div class='product-cart'>
+      <a href="#"><img src=""></a>
+      <button (click)="toggle()" class="cart-btn"><span class="cart-underline">Корзина(0)</span></button>
+    </div>
+  <p *ngIf="!condition">
+    <app-cart *ngFor='let item of productCart' [item]='item' (poductDelete)='productDelete($event)'></app-cart>
+  </p>
   </div>
-  <div class='search'>
-    <input class='search-input' type='text' placeholder='Введите' />
-  </div>
-  <div class='product-cart'>
-    <button (click)="toggle()">Корзина</button>
-  </div>
-<p *ngIf="!condition">
-  <app-cart *ngFor='let item of productCart' [item]='item' (poductDelete)='productDelete($event)'></app-cart>
-</p>

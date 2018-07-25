@@ -1,9 +1,47 @@
-/* .header-wrapper {
+.nav-wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 75px;
+  margin: 0 auto 155px auto;
+  width: 1200px;
+  border-bottom: 3px solid black;
 }
 
-.search-input{
-  width: 653px;
-  height: 33px;
-} */
+.phones {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  margin: 30px 10px 20px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.search-input {
+  width: 650px;
+  height: 30px;
+  background: #f5f3f5;
+  border: none;
+}
+
+.search {
+  position: relative;
+}
+
+.search-img {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+
+.cart-btn {
+  background: transparent;
+  border: none;
+}
+
+.cart-underline {
+  border-bottom: 1px solid black;
+}
