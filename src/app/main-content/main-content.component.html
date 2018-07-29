@@ -1,6 +1,6 @@
 <div class="main-content-wrapper">
   <div class='content-wrapper'>
-    <div class="product-card" *ngFor='let item of products'>
+    <div class="product-card" *ngFor='let item of products | input'>
       <div class='wallpaper-photo'>
         <img mat-card-image src="{{item.image}}" alt="Wallpaper photo">
       </div>
@@ -15,16 +15,16 @@
         <button (click)='addToCart(item)' class='order-btn'>Заказать</button>
       </div>
     </div>
-    <!-- <div class="pagination-wrapper">
-      <ul>
-        <li><a href="#"><</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">></a></li>
-      </ul>
-    </div> -->
+  </div>
+  <div class="pagination-wrapper">
+    <ul class="pagination-ul">
+      <li><a href="#"><</a></li>
+      <li (click)="select()" [ngClass]="{active: selected}"><a href="#">1</a></li>
+      <li (click)="select()" [ngClass]="{active: selected}"><a href="#">2</a></li>
+      <li (click)="select()" [ngClass]="{active: selected}"><a href="#">3</a></li>
+      <li (click)="select()" [ngClass]="{active: selected}"><a href="#">4</a></li>
+      <li><a href="#">></a></li>
+    </ul>
   </div>
   <div class="description-wrapper">
       <h1>Интернет магазин отделки и декора интерьеров <span class="h1-gluts">GLUTS.RU</span></h1>

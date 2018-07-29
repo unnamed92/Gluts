@@ -1,0 +1,40 @@
+.product-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.amount-wrapper {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+img {
+    width: 60px;
+    height: 70px;
+    margin-right: 17px;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+.price {
+    color: #d91313;
+}
+
+.close {
+    color: #d91313;
+}
+
+.name {
+    margin-bottom: 17px;
+}
+

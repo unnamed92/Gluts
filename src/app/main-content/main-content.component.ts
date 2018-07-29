@@ -7,12 +7,16 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 
 export class MainContentComponent {
-
+  selected: boolean;
   @Input() products;
 
   @Output() pushToCart: EventEmitter<any> = new EventEmitter();
 
   addToCart(item: Product) {
     this.pushToCart.emit(item);
+  }
+  select($event) {
+    this.selected = true;
+    console.log($event);
   }
 }

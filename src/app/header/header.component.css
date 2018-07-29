@@ -71,6 +71,11 @@ a {
 
 .product-cart {
   display: flex;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 6 7 5 #e0e0e0;
+  z-index: 1;
+  border: 1 px solid #e0e0e0;
 }
 
 input::-webkit-input-placeholder {
@@ -83,4 +88,12 @@ input:-moz-placeholder {
   color: #adadad;
   font-size: 16px;
   font-family: Open Sans;
+}
+
+.buy-list {
+  position: absolute;
+  right: 0;
+  top: 55px;
+  max-width: 300px;
+  padding: 25px 25px 35px 35px;
 }

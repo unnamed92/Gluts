@@ -35,6 +35,41 @@ p {
   background: #f5f3f5;
 }
 
+.bold-text {
+  font-family: Open Sans Bold;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination-ul  li{
+  display: inline-flex;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #9054b2;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-ul  li:last-child,
+.pagination-ul  li:first-child {
+  border: none;
+}
+
+.pagination-ul li a {
+  font-family: Open Sans;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.active {
+  background: #9054b2;
+  color: #fff;
+}
+
+
 .h1-gluts {
   color: #7f7f80;
 }

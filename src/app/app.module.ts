@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
+import { InputPipe } from './input.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CartComponent } from './cart/cart.component';
     MainContentComponent,
     FooterComponent,
     CartComponent,
+    InputPipe,
   ],
   imports: [
     BrowserModule,

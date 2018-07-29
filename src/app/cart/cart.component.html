@@ -1,1 +1,13 @@
-<div (click)='deleteProduct(item)'>{{item.name}}</div>
+<div (click)='deleteProduct(item)' class="product-wrapper">
+    <img src= {{item.image}}>
+    <div class="info-wrapper">
+        <p class="name">{{item.name}}</p>
+        <div class="amount-wrapper">
+            <button>-</button>
+            <button>5</button>
+            <button>+</button>
+        </div>
+        <p class="price">Цена: {{item.price * 5}} грн</p>
+    </div>
+    <button class="close">X</button>
+</div>
