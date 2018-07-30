@@ -7,22 +7,24 @@ import { Component, Input, Output, EventEmitter  } from '@angular/core';
 })
 export class HeaderComponent {
   @Input() productCart;
+  @Input() products;
+  @Input() searchValue;
+  // tslint:disable-next-line:no-output-on-prefix
   @Output() onEnterEvent: EventEmitter<any> = new EventEmitter();
 
-  condition = true;
-  options = [{'name': 'SF'}, {'name': 'NYC'}, {'name': 'Buffalo'}];
-  selectedOption = this.options[1];
+  public condition = true;
 
-  value = '';
-  onEnter(value: string) {
+  public value = '';
+  public searchParam = ['По умолчанию', 'Названию', 'Артикулу', 'Брэнду'];
+  public onEnter(value: string) {
     this.onEnterEvent.emit(value);
   }
 
-  onChange(option) {
+  public onChange(option) {
     alert(option.name);
   }
 
-  toggle() {
+  public toggle() {
     this.condition = !this.condition;
   }
 

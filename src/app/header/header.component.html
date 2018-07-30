@@ -10,10 +10,18 @@
       </div>
       <div class='search'>
         <input class='search-input' type='text' #search (keyup.enter)="onEnter(search.value)" placeholder='Более 1000 товаров' />
-        <!-- <select [(ngModel)]="selectedOption" (ngModelChange)="onChange($event)" >
-          <option *ngFor="let option of options" [ngValue]="option"> {{option.name}} </option>
-        </select> -->
+        <button class="category">Выберите категорию</button>
+        <ul *ngIf='true'>Искать по:
+          <li *ngFor='let p of searchParam'>
+            {{p}}
+          </li>
+        </ul>
         <button class="search-img" (click)="onEnter(search.value)"><img src="../../assets/images/search.png"></button>
+        <ul *ngIf='true'>
+          <li *ngFor='let i of products | input: searchValue'>
+            {{i.name}}
+          </li>
+        </ul>
       </div>
       <div class='product-cart'>
         <a (click)="toggle()"><img src="../../assets/images/font-icon.png"></a>

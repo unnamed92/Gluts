@@ -97,3 +97,14 @@ input:-moz-placeholder {
   max-width: 300px;
   padding: 25px 25px 35px 35px;
 }
+
+.category {
+  position: absolute;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transform: translate(-50%, -50%);
+  right: 50px;
+  top: 50%;
+}
