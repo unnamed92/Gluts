@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter  } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderComponent {
   @Input() productCart;
+  @Output() onEnterEvent: EventEmitter<any> = new EventEmitter();
 
   condition = true;
   options = [{'name': 'SF'}, {'name': 'NYC'}, {'name': 'Buffalo'}];
@@ -14,8 +15,7 @@ export class HeaderComponent {
 
   value = '';
   onEnter(value: string) {
-    this.value = value;
-    console.log(value);
+    this.onEnterEvent.emit(value);
   }
 
   onChange(option) {

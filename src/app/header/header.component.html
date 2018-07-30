@@ -10,9 +10,9 @@
       </div>
       <div class='search'>
         <input class='search-input' type='text' #search (keyup.enter)="onEnter(search.value)" placeholder='Более 1000 товаров' />
-        <select [(ngModel)]="selectedOption" (ngModelChange)="onChange($event)" >
+        <!-- <select [(ngModel)]="selectedOption" (ngModelChange)="onChange($event)" >
           <option *ngFor="let option of options" [ngValue]="option"> {{option.name}} </option>
-        </select>
+        </select> -->
         <button class="search-img" (click)="onEnter(search.value)"><img src="../../assets/images/search.png"></button>
       </div>
       <div class='product-cart'>

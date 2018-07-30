@@ -9,9 +9,13 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class MainContentComponent {
   selected: boolean;
   @Input() products;
+  @Input() searchValue;
 
   @Output() pushToCart: EventEmitter<any> = new EventEmitter();
 
+  public noResults() {
+    return this.searchValue === null ? true : false;
+  }
   addToCart(item: Product) {
     this.pushToCart.emit(item);
   }

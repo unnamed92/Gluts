@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-
+  public searchValue = '';
   productCart = [];
   products = [
     {
@@ -15,11 +15,11 @@ export class AppComponent {
       price: '1045', image: '../../assets/images/shop_list_fitst.png',
     },
     {
-      name: 'Обои', articul: '1045', brand: 'Fromental', id: '2',
+      name: 'класс', articul: '1035', brand: 'Fromental', id: '2',
       price: '1045', image: '../../assets/images/shop_list_fiv.png'
     },
     {
-      name: 'Обои', articul: '1045', brand: 'Fromental', id: '3',
+      name: 'супер', articul: '1045', brand: 'Fromental', id: '3',
       price: '1045', image: '../../assets/images/shop_list_sec.png'
     },
     {
@@ -47,6 +47,10 @@ export class AppComponent {
       price: '1045', image: '../../assets/images/shop_list_fiv.png'
     },
   ];
+
+  public catchSearchEvent(event) {
+    this.searchValue = (event) ? event : null;
+  }
 
   pushToCart(event: Product) {
     this.productCart.push(event);

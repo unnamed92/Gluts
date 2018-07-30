@@ -1,6 +1,7 @@
 <div class="main-content-wrapper">
   <div class='content-wrapper'>
-    <div class="product-card" *ngFor='let item of products | input'>
+    <div *ngIf = "noResults()">No results</div>
+    <div class="product-card" *ngFor='let item of products | input: searchValue'>
       <div class='wallpaper-photo'>
         <img mat-card-image src="{{item.image}}" alt="Wallpaper photo">
       </div>

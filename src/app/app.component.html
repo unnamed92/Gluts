@@ -1,8 +1,8 @@
 <div class='main-wrapper'>
   
-  <app-header [productCart]='productCart'></app-header>
+  <app-header (onEnterEvent) = "catchSearchEvent($event)" [productCart]='productCart'></app-header>
   
-  <app-main-content [products]='products' (pushToCart)='pushToCart($event)'></app-main-content>
+  <app-main-content [searchValue] = "searchValue" [products]='products' (pushToCart)='pushToCart($event)'></app-main-content>
   
   <app-footer></app-footer>
   
