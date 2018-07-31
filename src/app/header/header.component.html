@@ -10,14 +10,14 @@
       </div>
       <div class='search'>
         <input class='search-input' type='text' #search (keyup.enter)="onEnter(search.value)" placeholder='Более 1000 товаров' />
-        <button class="category">Выберите категорию</button>
-        <ul *ngIf='true'>Искать по:
+        <button class="category" (click)="searchParamsToggle()">Выберите категорию</button>
+        <ul *ngIf='showParams' class="searchParam">Искать по:
           <li *ngFor='let p of searchParam'>
             {{p}}
           </li>
         </ul>
         <button class="search-img" (click)="onEnter(search.value)"><img src="../../assets/images/search.png"></button>
-        <ul *ngIf='true'>
+        <ul *ngIf='true' class="searchValue">
           <li *ngFor='let i of products | input: searchValue'>
             {{i.name}}
           </li>

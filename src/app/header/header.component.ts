@@ -13,6 +13,7 @@ export class HeaderComponent {
   @Output() onEnterEvent: EventEmitter<any> = new EventEmitter();
 
   public condition = true;
+  public showParams = false;
 
   public value = '';
   public searchParam = ['По умолчанию', 'Названию', 'Артикулу', 'Брэнду'];
@@ -26,6 +27,10 @@ export class HeaderComponent {
 
   public toggle() {
     this.condition = !this.condition;
+  }
+
+  public searchParamsToggle() {
+    this.showParams = !this.showParams;
   }
 
   productDelete(event: Product) {

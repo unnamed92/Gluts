@@ -41,6 +41,12 @@ a {
   position: relative;
 }
 
+.searchParam {
+  position: absolute;
+  right: 140px;
+  top: 35px
+}
+
 .search-img {
   position: absolute;
   right: 25px;
@@ -98,6 +104,11 @@ input:-moz-placeholder {
   padding: 25px 25px 35px 35px;
 }
 
+.searchParam {
+  position: absolute;
+  right: 140px;
+}
+
 .category {
   position: absolute;
   background: transparent;
@@ -107,4 +118,15 @@ input:-moz-placeholder {
   transform: translate(-50%, -50%);
   right: 50px;
   top: 50%;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.searchValue {
+  position: absolute;
+  left: 14px;
+
 }
